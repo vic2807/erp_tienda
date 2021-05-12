@@ -19,6 +19,7 @@ AppAsset::register($this);
 
 <div class="page">
     <div class="container">
+        
         <?= $this->render("//components/navbar") ?>
             <div class="page-view">
             <?echo Breadcrumbs::widget([
