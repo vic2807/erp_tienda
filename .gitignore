@@ -1,0 +1,45 @@
+#Gitignore 2GOM 2019
+#Creado por Alfredo Elizondo 2019-08-15
+
+#Archivos de Sistema y configuracion de nuestro pipeline de trabajo
+.DS_Store
+**/.DS_Store
+/.DS_Store/
+Thumbs.db
+.vscode
+config.codekit3
+composer.lock
+
+#Archivos de servidor
+.htaccess
+/.htaccess/
+
+#Archivos propios de Yii2
+runtime/*
+web/assets/*
+vendor/
+vendor.zip
+web/dgom_web_assets/importFiles/*
+web/error_log
+
+#Generador de código
+!vendor/yiisoft/yii2-gii/src/generators
+
+#Archivos de config de 2GOM y por seguridad - el config se carga en la carpeta de desarrollo en el DrobBox de 2GOM
+config/**
+
+#Archivos de Diseño frontend
+web/dgom_web_assets/favicons/**
+
+#Archicos adicionales 
+tests/
+vagrant/
+vendor.zip
+/phpunit.xml
+phpunit.phar
+composer.phar
+
+#Respaldos de la base de datos
+web/backups/**
+
+

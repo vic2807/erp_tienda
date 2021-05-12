@@ -1,0 +1,67 @@
+
+//
+// Border Radius
+//
+=border-radius($radio)
+	-webkit-border-radius: $radio
+	-moz-border-radius: $radio
+	-ms-border-radius: $radio
+	border-radius: $radio
+
+// 
+// Box Shadow
+//
+=box-shadow($top, $left, $blur,$spread, $color)
+	-webkit-box-shadow: $top $left $blur $spread $color
+	-moz-box-shadow: $top $left $blur $spread $color
+	box-shadow: $top $left $blur $spread $color
+
+
+
+
+
+//
+// Media Queries
+//
+=respond-to($media)
+	@if $media == lg
+		@media (min-width: $screen-md + 1)
+			@content
+	@else if $media == md
+		@media (min-width: $screen-tl) and (max-width: $screen-md - 1 )
+			@content
+	@else if $media == tl
+		@media (min-width: $screen-tp + 1) and (max-width: $screen-tl - 1)
+			@content
+	@else if $media == xs
+		@media screen and (max-width: $screen-xs - 1)
+			@content
+	@else if $media == tp
+		@media screen and (max-width: $screen-tp)
+			@content
+	@else if $media == sl
+		@media screen and (max-width: $screen-sl)
+			@content
+	@else if $media == sp
+		@media screen and (max-width: $screen-sp)
+			@content
+
+
+//
+// Transición
+//
+=transition($delay)
+	-ms-transition: $delay
+	-moz-transition: $delay
+	-webkit-transition: $delay
+	transition: $delay
+
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content

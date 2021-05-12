@@ -1,0 +1,249 @@
+// Colores
+
+$white: #FFF
+$black: #000
+
+$greyDark: #5C5C5B
+$grey: #868988
+$greyLight: #9E9E9D
+$greyLighter: #c0c0c0
+$greyUltraLight: #f8f8f8
+
+$primary: $white
+$secondary: $black
+$accent: #73BCEB
+$darker: darken($accent,20)
+$dark: darken($accent,10)
+$light: lighten($accent,10)
+$lighter: lighten($accent,20)
+
+$error: red
+$success: green
+$warning: orange
+
+body
+    //overflow: hidden
+
+.page
+    background-color: $primary
+    min-height: calc(100vh - 38px)
+    position: relative
+    z-index: 1
+    display: flex
+
+.login_bkgd_image
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    opacity: 1
+    height: 100%
+    width: 100%
+    // object-fit: cover
+    display: block
+
+.login-form-wrapper
+    padding: 5vh 5vw
+    will-change: transform, opacity
+    margin: auto
+    display: flex
+    flex-flow: column
+    z-index: 3
+    align-items: center
+    transition: all 1.2s cubic-bezier(0.36, 0.27, 0.32, 0.99)
+    transform: translate(0, -300px)
+    opacity: 0
+
+.login-form-wrapper.showLogin
+    transition: all 0.8s cubic-bezier(0.36, 0.27, 0.32, 0.99)
+    transform: translate(0, 0)
+    opacity: 1
+
+.login_form_logo
+    width: auto
+    max-height: 160px
+    margin-bottom: 24px
+
+.login_form_title
+    font-size: 2.2em
+    color: $greyDark
+    -webkit-font-smoothing: antialiased
+    margin-bottom: 24px
+
+.form-horizontal
+    padding: 24px
+    background-color: white
+    display: flex
+    flex-flow: column
+    align-items: flex-start
+    justify-content: flex-start
+    border-radius: 1px
+    height: auto
+    overflow: hidden
+    overflow-y: scroll
+    //+box-shadow(0,12px,28px,-5px,rgba(0,0,0,0.3))
+
+.login-form-recover-pass
+    height: auto
+
+.form-horizontal .form-group
+    margin: 0
+    width: 100%
+    position: relative
+
+.form-group-inputs
+    min-height: 86px
+
+.form_label
+    font-size: 1.3em
+    font-weight: $light
+
+.form-register
+    height: auto
+    width: 740px
+
+.form_input
+    position: relative
+    display: flex
+    &:focus
+        border: none
+        box-shadow: none
+        outline: none
+
+.form_icon
+    position: absolute
+    top: 0px
+    left: 8px
+    display: flex
+    width: 20px
+    height: 100%
+    align-items: center
+    justify-content: center
+    transition: transform 0.3s ease
+
+
+.form-control
+    border: none
+    box-shadow: none
+    outline: none
+    border-radius: 0
+    border: 1px solid $greyLight
+    height: 40px
+    padding-left: 34px
+    &:focus
+        border: none
+        box-shadow: none
+        outline: none
+        border-bottom: 1px solid $greyLight
+
+
+.has-success .form-control
+    &:focus
+        border: none
+        box-shadow: none
+        outline: none
+        border-bottom: 1px solid $greyLight
+
+.has-error .form-control
+    border: none
+    border-right: 2px solid $darker
+    box-shadow: none
+    border: 1px solid $error
+    &:focus
+        border: none
+        box-shadow: none
+        outline: none
+        border-bottom: 1px solid $greyLight
+.has-error
+    .help-block,
+    .help-block-error
+        background-color: red
+        color: white
+        padding: .5rem 1.8rem
+        margin-top: 2px
+
+.btn-primary_login
+    background-color: $secondary
+    border-color: $secondary
+    font-size: 1.5em
+    font-weight: $light
+    padding: 8px 12px
+    width: 100%
+    border-radius: 0
+    &:hover
+        background-color: $secondary
+        border-color: $secondary
+    &:focus
+        background-color: $secondary
+        outline: 0
+        box-shadow: none
+        border-color: $secondary
+    &:down
+        background-color: $secondary
+        outline: 0
+        box-shadow: none
+        border-color: $secondary
+    &:active
+        background-color: $secondary
+        box-shadow: none
+
+.btn-primary_login:not(:disabled):not(.disabled):active
+    background-color: $secondary
+    border-color: $secondary
+    outline: 0
+    box-shadow: none
+
+.btn-primary_login:not(:disabled):not(.disabled):active:focus
+    background-color: $secondary
+    border-color: $secondary
+    box-shadow: none
+
+.recuperar-pass-title
+    color: $greyDark
+    font-size: 1.5em
+    font-weight: $light
+    margin-bottom: 8px
+    margin-top: 32px
+    text-align: left
+.recuperar-pass
+    color: $greyLight
+.inline-btn
+    color: $greyDark
+    display: inline-block
+    &:hover
+        color: $secondary
+
+
+.dgom-aceptar-terminos
+    display: flex
+    align-items: flex-start
+    justify-content: space-around
+    margin-top: 32px
+    input[type='checkbox']
+        height: 20px
+        width: 20px
+        margin-right: 20px
+    label
+        display: inline
+        margin-left: 4px
+        font-size: 1.4rem
+
+.col-wrapper
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    margin-bottom: 32px
+    width: 100%
+
+.col-right,
+.col-left
+    width: 50%
+.col-left
+    margin-right: 24px
+
+
+.login_logo-secondary
+    position: absolute
+    bottom: 15.2%
+    left: 0
+    z-index: 3

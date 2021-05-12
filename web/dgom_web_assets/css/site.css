@@ -1,0 +1,244 @@
+.page-contents-body{
+    background: white;
+    padding: 34px 30px 10px 30px;
+    margin-top: 45px;
+
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(204,204,204,1);
+    box-shadow: 1px 1px 2px 0px rgba(204,204,204,1);
+}
+
+
+
+.contenido_div{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(204,204,204,1);
+    box-shadow: 1px 1px 2px 0px rgba(204,204,204,1);
+}
+
+.breadcrumb{
+    background-color: white;
+    margin-top: 20px;
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(204,204,204,1);
+    box-shadow: 1px 1px 2px 0px rgba(204,204,204,1);
+}
+
+.breadcrumb li.active {
+    font-weight: 700;
+    color: #FFF;
+}
+
+
+div#div_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000002e;
+    z-index: 9999;
+    /*color: white;*/
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+}
+
+
+
+div#cover_window {
+    background: white;
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+div#cover_header {
+    background: #4c4c4c;
+    width: 100%;
+    height: 30px;
+}
+
+div#cover_content{
+    overflow: auto;
+    height: 90%;
+    padding: 25px;
+    text-align: left;
+}
+
+div.loading{
+    text-align: center;
+    vertical-align: inherit;
+    padding-top: 149px;
+}
+
+
+span#cover_close {
+    width: 30px;
+    height: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    vertical-align: inherit;
+    
+}
+
+label.control-label {
+    color: #5c5c5b;
+}
+
+h1.title {
+    border-bottom: 1px solid #af62bc;
+    margin-bottom: 30px;
+    line-height: 2em;
+    padding-left: 15px;
+}
+
+h2.title {
+    border-bottom: 1px solid #dc3545;
+    margin-bottom: 30px;
+    line-height: 2em;
+    padding-left: 15px;
+}
+
+h3.title {
+    border-bottom: 1px solid #dc3545;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    padding-left: 15px;
+}
+
+
+
+hr.hr-text {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+.div_funciones_avanzadas{
+    display:none;
+}
+
+.p_funciones_avanzadas{
+    cursor: pointer;
+}
+
+
+td {
+    padding-left: 10px !important;
+    margin-left: 10px;
+    padding-top: 10px !important;
+}
+
+td a.btn.btn-success.pull-right {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-width: 80px;
+}
+
+.nav-bar-system-logo {
+    height: 70%;
+    margin: auto;
+}
+
+.btn-primary {
+    background-color: #45a7bb;
+    border-color: #45a7bb;
+}
+
+
+.footer {
+    background-color: #2c3348;
+    
+}
+
+.page {
+    background-color: #2c3348;
+}
+
+.page-login {
+    background-color: #25367C;
+}
+
+#process-error {
+    border: 1px solid red;
+    width: 100%;
+    background: #ff000047;
+    color: black;
+    padding: 5px 15px;
+    margin: 0 auto;
+    display: none;
+}
+
+
+form div.required label.control-label:after {
+    content:" * ";
+    color:red;
+}
+
+
+.hint-block {
+    font-style: italic;
+    color: #1b305e;
+    font-weight: 100;
+}
+
+button.btn.btn-primary.btn-primary_login {
+    width: 100%;
+}
+
+/* AJUSTA EL MENU */
+
+.sub-menu {
+    top: 80px;
+}
+
+
+/* Body de la página */
+
+.body-content{
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(92, 92, 91, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page-view{
+    background-color: #2c3348;
+    box-shadow: 0px 2px 10px rgba(92, 92, 91, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* PAGINA INTEGRADA EN 1 BLOQUE */
+
+
+
+.breadcrumb {
+    background-color:#2c3348;
+    
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.body-content{
+    box-shadow: none;
+}
+
+/* TERMINA PAGINA INTEGRADA EN 1 BLOQUE */
+
