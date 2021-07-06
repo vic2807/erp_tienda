@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 $this->title = $model->nombre;
-$this->params['breadcrumbs'][] = ['label' => 'Mod Usuarios Ent Usuarios', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Usuarios', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
@@ -27,23 +27,16 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id_usuario',
             'txt_username',
             'txt_apellido_paterno',
             'txt_apellido_materno',
             'txt_email:email',
             'txt_password',
             
-            'txt_imagen',
-            'b_remember_me',
             // 'txt_token',
             // 'txt_auth_key',
             // 'txt_password_hash',
             // 'txt_password_reset_token',
-            
-            'fch_creacion',
-            'fch_actualizacion',
-            'id_status',
             
         ],
     ]) ?>

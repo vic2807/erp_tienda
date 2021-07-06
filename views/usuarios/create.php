@@ -46,6 +46,8 @@ ios-ent-usuarios-create body-content">
 
         <?= $form->field($model, 'txt_email')->textInput(['maxlength' => true]) ?>
 
+        <?= $form->field($model, 'repeatEmail')->textInput(['maxlength' => true]) ?>
+
         <?= $form->field($model, 'txt_password')->passwordInput(['maxlength' => true]) ?>
 
         <?= $form->field($model, 'repeatPassword')->passwordInput(['maxlength' => true]) ?>
